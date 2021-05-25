@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+    <input type="text" id="number" placeholder="Enter number between 1 and 10"/>
+    <button onclick="getVal();">Submit</button>
+    <script>
+        const bodyEl = document.querySelector('section');
+        document.getElementById('number').value;
+        
+        function getVal(){
+            var number = document.getElementById('number').value;
+            if (number ==1){
+                bodyEl.style.backgroundColor= 'red';
+            }
+            else if(number ==2 ){
+                bodyEl.style.backgroundColor= 'green';
+            }
+            else if(number ==3 ){
+                bodyEl.style.backgroundColor= 'blue';
+            }
+            else if(number ==4 ){
+                bodyEl.style.backgroundColor= 'purple';
+            }
+            else if(number ==5 ){
+                bodyEl.style.backgroundColor= 'pink';
+            }
+            else if(number ==6 ){
+                bodyEl.style.backgroundColor= 'orange';
+            }
+            else if(number ==7 ){
+                bodyEl.style.backgroundColor= 'gray';
+            }
+            else if(number ==8 ){
+                bodyEl.style.backgroundColor= 'black';
+            }
+            else if(number ==9 ){
+                bodyEl.style.backgroundColor= 'yellow';
+            }
+            else if(number ==10 ){
+                bodyEl.style.backgroundColor= 'limegreen';
+            }
+            else{
+                alert("Enter number between 1 and 10")
+            }
+        }
+    </script>
+    </section>
+</body>
+</html>
