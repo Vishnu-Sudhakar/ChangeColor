@@ -8,9 +8,10 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"> -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color: black;">
     <div class="container">
     <section>
+        <h1>Color change</h1>
     <input type="text" id="number" placeholder="Enter number between 1 and 10"/>
     <button id="button" onclick="getVal();">Submit</button>
     
@@ -21,41 +22,55 @@
         //<input class="input is-primary" type="text" placeholder="Primary input">
         function getVal(){
             var number = document.getElementById('number').value;
-            if (number == 0){
+            switch (number){
+                case "0":
                 bodyEl.style.backgroundColor = 'magenta';
-            }
-            else if (number ==1){
+                break;
+            
+                case "1":
                 bodyEl.style.backgroundColor= 'red';
-            }
-            else if(number ==2 ){
+                break;
+
+                case "2":
                 bodyEl.style.backgroundColor= 'green';
-            }
-            else if(number ==3 ){
+                break;
+            
+                case "3":
                 bodyEl.style.backgroundColor= 'blue';
-            }
-            else if(number ==4 ){
+                break;
+            
+                case "4":
                 bodyEl.style.backgroundColor= 'purple';
-            }
-            else if(number ==5 ){
+                break;
+
+                case "5":
                 bodyEl.style.backgroundColor= 'pink';
-            }
-            else if(number ==6 ){
+                break;
+            
+                case "6":
                 bodyEl.style.backgroundColor= 'orange';
-            }
-            else if(number ==7 ){
+                break;
+
+                case "7":
+                bodyEl.style.backgroundColor= 'green';
+                break;
+            
+                case "8":
                 bodyEl.style.backgroundColor= 'gray';
-            }
-            else if(number ==8 ){
+                break;
+            
+                case "9":
                 bodyEl.style.backgroundColor= 'black';
-            }
-            else if(number ==9 ){
+                break;
+
+                case "10":
                 bodyEl.style.backgroundColor= 'yellow';
-            }
-            else if(number ==10 ){
-                bodyEl.style.backgroundColor= 'limegreen';
-            }
-            else{
-                alert("Enter number between 1 and 10")
+                break;
+                
+                default:
+                alert(
+                    "enter a valid input"
+                )
             }
         }
         var input = document.getElementById("number");
